@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="../style/base.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Country Result</title>
+</head>
+
+<body>
+    <header></header>
+    <main>
+
+        <% DATA.forEach(element=> { %>
+            <div class="card">
+                <p>Date : <%=element.Date%></p>
+                <p>Total Confiremed : <%=element.Cases%></p>
+            </div>
+            <% }) %>
+
+    </main>
+</body>
+
+</html>

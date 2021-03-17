@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/base.css">
+    <title>Home Page</title>
+</head>
+<body>
+    <header>
+        <a href="/">HOME</a>
+        <a href="/AllCountries">All Countries</a>
+        <a href="MyRecords">My Records</a>
+    </header>
+    <main>
+
+<div class="card">TotalConfirmed : <%=DATA.TotalConfirmed%></div>
+<div class="card">TotalDeaths : <%=DATA.TotalDeaths%></div>
+<div class="card">TotalRecovered : <%=DATA.TotalRecovered%></div>
+
+
+<form action="/getCountryResult" method="POST">
+    <label for="">Search </label><br>
+    <input name="search" type="text"><br>
+    <label for="">From</label><br>
+    <input type="date" name="from" ><br>
+    <label for="">To</label><br>
+    <input name="to" type="date"><br>
+    <button type="submit" > Search </button>
+</form>
+    </main>
+    <footer></footer>
+</body>
+</html>
